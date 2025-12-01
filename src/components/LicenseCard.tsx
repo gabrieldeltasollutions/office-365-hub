@@ -70,8 +70,12 @@ export const LicenseCard = ({ license, onUpdate, onDelete }: LicenseCardProps) =
           <div className="flex items-start justify-between">
             <div className="space-y-1 flex-1">
               <CardTitle className="text-lg">{license.name}</CardTitle>
+              <p className="text-xs text-muted-foreground flex items-center gap-1.5">
+                <Mail className="h-3 w-3" />
+                {license.email}
+              </p>
               <p className="text-xs text-muted-foreground font-mono">
-                {license.key}
+                Chave: {license.key}
               </p>
             </div>
             {getStatusBadge()}

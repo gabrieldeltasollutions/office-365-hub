@@ -14,6 +14,7 @@ export interface User {
 export interface License {
   id: string;
   name: string;
+  email: string;
   key: string;
   users: User[];
   maxUsers: number;
