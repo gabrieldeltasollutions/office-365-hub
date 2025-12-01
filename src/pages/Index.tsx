@@ -20,28 +20,7 @@ export interface License {
 }
 
 const Index = () => {
-  const [licenses, setLicenses] = useState<License[]>([
-    {
-      id: "1",
-      name: "Microsoft 365 Business Standard",
-      key: "XXXXX-XXXXX-XXXXX-XXXXX",
-      users: [
-        { id: "1", name: "João Silva", email: "joao@empresa.com" },
-        { id: "2", name: "Maria Santos", email: "maria@empresa.com" },
-        { id: "3", name: "Pedro Costa", email: "pedro@empresa.com" },
-      ],
-      maxUsers: 5,
-    },
-    {
-      id: "2",
-      name: "Microsoft 365 E3",
-      key: "YYYYY-YYYYY-YYYYY-YYYYY",
-      users: [
-        { id: "4", name: "Ana Oliveira", email: "ana@empresa.com" },
-      ],
-      maxUsers: 5,
-    },
-  ]);
+  const [licenses, setLicenses] = useState<License[]>([]);
 
   const [isAddDialogOpen, setIsAddDialogOpen] = useState(false);
 
